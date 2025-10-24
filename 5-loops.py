@@ -25,5 +25,21 @@ for i in range(1, 11):
     print("5 * ", i ,"=", 5*1)
 
 
+print("Sum of squares of 10 numbers from 1 to 10")
+sum_of_squares = 0
+for i in range(1, 11):
+    sum_of_squares = sum_of_squares + (i * i)
+print("Sum of Sqaures = ", sum_of_squares)
 
 
+print("Sum of cubes of 10 numbers from 1 to 10")
+sum_of_cubes = 0
+for i in range(1, 11):
+    sum_of_cubes = sum_of_cubes + (i*i*i)
+print("Sum of Cubes = ", sum_of_cubes)
+
+print("Factorial of 6")
+factorial = 1
+for i in range(1, 7):
+    factorial = factorial * i
+print("Factorial of 6=", factorial)
