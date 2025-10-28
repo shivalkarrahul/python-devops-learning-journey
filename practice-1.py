@@ -64,7 +64,7 @@ number = 10
 print("Factorial of", number)
 factorial = 1
 for i in range(1, number+1):
-    factorial = factorial + i
+    factorial = factorial * i
 print("Factorial of", number, "=", factorial)
 
 #Check if a string is a palindrome
