@@ -22,9 +22,9 @@ with open(file_to_write, "r") as file:
     print(content)
 
 
-file_to_append = "test_file_to_append"
+file_to_append = "test_file_to_append.txt"
 mode ="a"
-print("\nAppending to file", file_to_write ,"in", mode ,"mode")
+print("\nAppending to file", file_to_append ,"in", mode ,"mode")
 with open(file_to_append, mode) as file:
     file.write("Test")
 with open(file_to_append, "r") as file:
