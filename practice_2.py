@@ -6,16 +6,16 @@ def print_message(message: str) -> None:
 
 def sum_of_numbers(number: int) -> None:
     print("\nFunction = sum_of_numbers")
-    sum = 0
+    total = 0
     for i in range(number+1):
-        print(sum ,"+", i)
-        sum = sum + i        
-    print("Sum of numbers upto ", number, " = ", sum)
+        print(total ,"+", i)
+        totalt = total + i        
+    print("Sum of numbers upto ", number, " = ", total)
 
 def check_even_odd(number: int) -> None:
     print("\nFunction = check_even_odd")
     if number % 2 == 0:
-        print("Number", number ,"is prime")
+        print("Number", number ,"is even")
     else:
         print("Number", number ,"is odd")
 
@@ -72,7 +72,7 @@ def check_palindrome(user_string: str) -> None:
 
 def fibonacci_series(number: int) -> None:
     # 0 1 1 2 3 5
-    print("nFunction = fibonacci_series")
+    print("\nFunction = fibonacci_series")
     first = 0
     next = 1
     for i in range(1, number+1):
