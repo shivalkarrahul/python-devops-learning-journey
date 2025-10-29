@@ -1,3 +1,5 @@
+if = 7
+    
 file_to_read = "2-operators-and-expressions.py"
 mode = "r"
 print("\nReading file", file_to_read ,"in", mode ,"mode")
