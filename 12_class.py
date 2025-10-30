@@ -89,3 +89,44 @@ print(f"Speed = {i20.speed}")
 
 i20.decrease_speed(10)
 print(f"Speed = {i20.speed}")
+
+i20.decrease_speed(10)
+print(f"Speed = {i20.speed}")
+
+
+
+
+class Bank:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        if amount <= 0:
+            print("Invalid amount to deposit")
+        else:
+            self.balance = self.balance + amount
+            print(f"Deposited INT {amount}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient Balance")
+        else:
+            self.balance = self.balance - amount
+            print(f"Withdrawn INR {amount}")
+    
+    def show_balance(self):
+        print(f"Balance is INR {self.balance}")
+    
+
+
+bank = Bank("HDFC", 1000)
+
+print(f"My Bank Account is in {bank.name} Bank")
+bank.show_balance()
+
+bank.deposit(100)
+bank.show_balance()
+
+bank.withdraw(50000)
+bank.show_balance()
